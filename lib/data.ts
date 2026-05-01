@@ -1,15 +1,15 @@
 export const profile = {
   name: "Lina Zulaikah",
-  age: 25,
+  age: 26,
   location: "Istanbul, Türkiye",
   email: "Linazulaikah.work@gmail.com",
-  linkedin: "https://www.linkedin.com/in/lina-zulaikah",
+  linkedin: "https://www.linkedin.com/in/linazulaikah/",
   tagline:
-    "Computer Science researcher and tech analyst working on AI, ERP, and data-driven solutions.",
+    "Where computer science meets systems thinking and real-world impact.",
   summary:
-    "Tech enthusiast passionate about technology, data, and AI-driven solutions. Currently pursuing a Master's in Computer Science at Istanbul Technical University, with hands-on experience across software development, ERP systems, AI research, and project management.",
-  status: "Master's @ Istanbul Technical University · Open to research collaborations",
-  languages: ["English", "Turkish (C1)", "Indonesian"],
+    "Focused on technology and turning data into meaningful insights. Currently pursuing a Master's in Computer Science at Istanbul Technical University, with experience across software development, ERP systems, AI research, and project management.",
+  status: "Master's at Istanbul Technical University · Open to research collaborations",
+  languages: ["English", "Turkish (C1)", "Bahasa"],
 };
 
 export type Publication = {
