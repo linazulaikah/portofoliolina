@@ -86,15 +86,6 @@ export function Hero() {
         </motion.div>
       </div>
 
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 0.8, duration: 0.6 }}
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 font-mono text-[10px] uppercase tracking-widest text-[var(--color-muted)] flex items-center gap-2"
-      >
-        <span className="block h-px w-8 bg-[var(--color-border)]" />
-        Scroll
-      </motion.div>
     </section>
   );
 }
