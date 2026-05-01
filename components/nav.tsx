@@ -56,10 +56,10 @@ export function Nav() {
           : "bg-transparent",
       )}
     >
-      <div className="mx-auto max-w-5xl px-6 py-4 flex items-center justify-between">
-        <a href="#top" className="text-sm font-medium tracking-tight">
-          Lina<span className="text-[var(--color-accent)]">.</span>
-        </a>
+      <div className="mx-auto max-w-5xl px-8 py-4 flex items-center justify-between">
+        <a href="#top" className="text-sm font-medium tracking-tight text-[var(--color-muted)]">
+  Lina<span className="text-[var(--color-accent)]">.</span>
+</a>
         <nav className="hidden md:flex items-center gap-7 text-sm text-[var(--color-muted)]">
           {sections.map((s) => (
             <a
