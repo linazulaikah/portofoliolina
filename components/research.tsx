@@ -21,7 +21,7 @@ export function Research() {
           >
             <div className="flex items-center justify-between mb-4">
               <span
-                className="font-mono text-[10px] uppercase tracking-widest px-2 py-0.5 rounded-full text-white"
+                className="font-mono text-[10px] uppercase tracking-widest px-2 py-0.5 rounded-full text-[var(--color-bg)]"
                 style={{ background: "var(--color-accent)" }}
               >
                 {p.venue} {p.year}
