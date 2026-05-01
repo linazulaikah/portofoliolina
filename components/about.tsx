@@ -6,7 +6,7 @@ import { Section } from "./section";
 
 export function About() {
   return (
-    <Section id="about" eyebrow="About" title="A researcher building useful things.">
+    <Section id="about" eyebrow="About" title="From data to decisions, from systems to solutions.">
       <div className="grid lg:grid-cols-3 gap-10 lg:gap-16">
         <motion.p
           initial={{ opacity: 0, y: 12 }}
