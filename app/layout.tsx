@@ -7,12 +7,10 @@ const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
 });
-
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
 });
-
 const instrumentSerif = Instrument_Serif({
   variable: "--font-instrument-serif",
   weight: "400",
@@ -46,7 +44,30 @@ export default function RootLayout({
       <head>
         <ThemeScript />
       </head>
-      <body className="font-sans">{children}</body>
+      <body
+        className="font-sans"
+        style={{
+          backgroundImage: "url('/istanbul.jpg')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundAttachment: "fixed",
+          backgroundRepeat: "no-repeat",
+        }}
+      >
+        <div
+          style={{
+            position: "fixed",
+            inset: 0,
+            backgroundColor: "var(--color-bg)",
+            opacity: 0.88,
+            zIndex: 0,
+            pointerEvents: "none",
+          }}
+        />
+        <div style={{ position: "relative", zIndex: 1 }}>
+          {children}
+        </div>
+      </body>
     </html>
   );
 }
