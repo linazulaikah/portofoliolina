@@ -3,6 +3,7 @@
 import { useEffect, useState, useSyncExternalStore } from "react";
 import { Moon, Sun } from "lucide-react";
 import { cn } from "@/lib/cn";
+import { Sun, Moon, Home } from "lucide-react";
 
 const sections = [
   { id: "about", label: "About" },
@@ -57,8 +58,11 @@ export function Nav() {
       )}
     >
       <div className="mx-auto max-w-5xl px-8 py-4 flex items-center justify-between">
-        <a href="#top" className="text-sm font-medium tracking-tight text-[var(--color-muted)]">
-  Lina<span className="text-[var(--color-accent)]">.</span>
+       <a 
+  href="#top" 
+  className="size-9 inline-flex items-center justify-center rounded-full border border-[var(--color-border)] hover:bg-[var(--color-subtle)] transition-colors text-[var(--color-muted)]"
+>
+  <Home className="size-4" />
 </a>
         <nav className="hidden md:flex items-center gap-7 text-sm text-[var(--color-muted)]">
           {sections.map((s) => (
