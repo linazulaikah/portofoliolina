@@ -54,16 +54,16 @@ export default function RootLayout({
           backgroundRepeat: "no-repeat",
         }}
       >
-        <div
-          style={{
-            position: "fixed",
-            inset: 0,
-            backgroundColor: "var(--color-bg)",
-            opacity: 0.50,
-            zIndex: 0,
-            pointerEvents: "none",
-          }}
-        />
+       <div
+  style={{
+    position: "fixed",
+    inset: 0,
+    backgroundColor: "var(--color-bg)",
+    opacity: 0.88,
+    zIndex: 0,
+    pointerEvents: "none",
+  }}
+/>
         <div style={{ position: "relative", zIndex: 1 }}>
           {children}
         </div>
