@@ -202,7 +202,7 @@ export const education = [
   {
     school: "Istanbul Technical University",
     degree: "Master of Computer Science",
-    period: "2023 – 2026",
+    period: "2024 – Now",
     location: "Istanbul, Türkiye",
   },
   {
