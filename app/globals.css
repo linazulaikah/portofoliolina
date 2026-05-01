@@ -49,19 +49,19 @@
     overflow: hidden;
   }
 
-  body {
-    background: var(--color-bg);
-    color: var(--color-fg);
-    font-feature-settings: "ss01", "cv11";
-    -webkit-font-smoothing: antialiased;
-  }
-
-  ::selection {
-    background: var(--color-accent-soft);
-    color: var(--color-fg);
-  }
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-color: var(--color-bg);
+  opacity: 0.82;
+  z-index: 0;
+  pointer-events: none;
 }
 
+.dark body::before {
+  opacity: 0.75;
+}
 @utility text-balance {
   text-wrap: balance;
 }
