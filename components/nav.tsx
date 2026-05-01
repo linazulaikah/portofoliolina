@@ -56,19 +56,12 @@ export function Nav() {
       )}
     >
       <div className="mx-auto max-w-5xl px-8 py-4 flex items-center justify-between">
-        
-          href="#top"
-  className="size-9 inline-flex items-center justify-center rounded-full border border-[var(--color-border)] hover:bg-[var(--color-subtle)] transition-colors text-[var(--color-muted)]"
->
+        <a href="#top" className="size-9 inline-flex items-center justify-center rounded-full border border-[var(--color-border)] hover:bg-[var(--color-subtle)] transition-colors text-[var(--color-muted)]">
           <Home className="size-4" />
         </a>
         <nav className="hidden md:flex items-center gap-7 text-sm text-[var(--color-muted)]">
           {sections.map((s) => (
-            
-              key={s.id}
-              href={`#${s.id}`}
-              className="transition-colors hover:text-[var(--color-fg)]"
-            >
+            <a key={s.id} href={`#${s.id}`} className="transition-colors hover:text-[var(--color-fg)]">
               {s.label}
             </a>
           ))}
