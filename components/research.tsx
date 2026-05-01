@@ -5,11 +5,6 @@ import { ArrowUpRight } from "lucide-react";
 import { publications } from "@/lib/data";
 import { Section } from "./section";
 
-const venueColor: Record<string, string> = {
-  IEEE: "oklch(0.55 0.18 250)",
-  UOK: "oklch(0.6 0.16 30)",
-  JIPI: "oklch(0.6 0.14 150)",
-};
 
 export function Research() {
   return (
@@ -27,7 +22,7 @@ export function Research() {
             <div className="flex items-center justify-between mb-4">
               <span
                 className="font-mono text-[10px] uppercase tracking-widest px-2 py-0.5 rounded-full text-white"
-                style={{ background: venueColor[p.venue] }}
+                style={{ background: "var(--color-accent)" }}
               >
                 {p.venue} {p.year}
               </span>
