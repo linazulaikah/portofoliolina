@@ -207,7 +207,7 @@ export const education = [
   },
   {
     school: "Telkom University",
-    degree: "Bachelor of Information Systems · CGPA 3.64",
+    degree: "Bachelor of Information Systems",
     period: "2018 – 2022",
     location: "Bandung, Indonesia",
   },
