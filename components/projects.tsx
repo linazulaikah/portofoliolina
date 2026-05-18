@@ -1,5 +1,4 @@
 "use client";
-
 import { motion } from "motion/react";
 import { projects } from "@/lib/data";
 import { ProjectThumbnail } from "./project-thumbnail";
@@ -39,21 +38,11 @@ export function Projects() {
                     </li>
                   ))}
                 </ul>
-               {p.url && (
-  <a href={p.url} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 font-mono text-xs uppercase tracking-widest text-[var(--color-accent)] hover:opacity-70 transition-opacity pt-1">
-    View Project →
-  </a>
-)}
-            
-                  {p.stack.map((s) => (
-                    <li
-                      key={s}
-                      className="font-mono text-[10px] uppercase tracking-wider px-2 py-0.5 rounded-full bg-[var(--color-subtle)] text-[var(--color-muted)]"
-                    >
-                      {s}
-                    </li>
-                  ))}
-                </ul>
+                {p.url && (
+                  <a href={p.url} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 font-mono text-xs uppercase tracking-widest text-[var(--color-accent)] hover:opacity-70 transition-opacity pt-1">
+                    View Project →
+                  </a>
+                )}
               </div>
             </div>
           </motion.article>
