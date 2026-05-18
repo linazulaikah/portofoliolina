@@ -59,7 +59,7 @@ export default function RootLayout({
     position: "fixed",
     inset: 0,
     backgroundColor: "var(--color-bg)",
-    opacity: 0.88,
+    opacity: 0.70,
     zIndex: 0,
     pointerEvents: "none",
   }}
