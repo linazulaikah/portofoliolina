@@ -138,6 +138,7 @@ export type Project = {
   approach: string;
   outcome: string;
   stack: string[];
+  url?: string; 
 };
 
 export const projects: Project[] = [
