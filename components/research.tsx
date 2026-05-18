@@ -26,7 +26,13 @@ export function Research() {
               >
                 {p.venue} {p.year}
               </span>
-              <ArrowUpRight className="size-4 text-[var(--color-muted)] group-hover:text-[var(--color-accent)] group-hover:-translate-y-0.5 group-hover:translate-x-0.5 transition-all" />
+             {p.url ? (
+  <a href={p.url} target="_blank" rel="noopener noreferrer">
+    <ArrowUpRight className="size-4 text-[var(--color-muted)] group-hover:text-[var(--color-accent)] group-hover:-translate-y-0.5 group-hover:translate-x-0.5 transition-all" />
+  </a>
+) : (
+  <ArrowUpRight className="size-4 text-[var(--color-muted)]" />
+)}
             </div>
             <h3 className="text-base font-medium leading-snug text-balance mb-3">
               {p.title}
