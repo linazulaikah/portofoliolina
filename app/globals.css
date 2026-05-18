@@ -1,10 +1,8 @@
 @import "tailwindcss";
-
 @theme {
   --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
   --font-mono: var(--font-geist-mono), ui-monospace, SFMono-Regular, monospace;
   --font-serif: var(--font-instrument-serif), ui-serif, Georgia, serif;
-
   --color-bg: oklch(0.99 0.002 247);
   --color-fg: oklch(0.18 0.012 252);
   --color-muted: oklch(0.55 0.012 252);
@@ -14,12 +12,10 @@
   --color-accent: oklch(0.62 0.14 184);
   --color-accent-soft: oklch(0.93 0.04 184);
 }
-
 @layer base {
   :root {
     color-scheme: light;
   }
-
   .dark {
     color-scheme: dark;
     --color-bg: oklch(0.16 0.012 252);
@@ -31,41 +27,45 @@
     --color-accent: oklch(0.78 0.14 184);
     --color-accent-soft: oklch(0.28 0.06 184);
   }
-
   html.lenis,
   html.lenis body {
     height: auto;
   }
-
   .lenis.lenis-smooth {
     scroll-behavior: auto !important;
   }
-
   .lenis.lenis-smooth [data-lenis-prevent] {
     overscroll-behavior: contain;
   }
-
   .lenis.lenis-stopped {
     overflow: hidden;
   }
-
-body::before {
-  content: "";
-  position: fixed;
-  inset: 0;
-  background-color: var(--color-bg);
-  opacity: 0.82;
-  z-index: 0;
-  pointer-events: none;
-}
-
-.dark body::before {
-  opacity: 0.75;
+  body {
+    background: var(--color-bg);
+    color: var(--color-fg);
+    font-feature-settings: "ss01", "cv11";
+    -webkit-font-smoothing: antialiased;
+  }
+  body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background-color: var(--color-bg);
+    opacity: 0.82;
+    z-index: 0;
+    pointer-events: none;
+  }
+  .dark body::before {
+    opacity: 0.75;
+  }
+  ::selection {
+    background: var(--color-accent-soft);
+    color: var(--color-fg);
+  }
 }
 @utility text-balance {
   text-wrap: balance;
 }
-
 @utility text-pretty {
   text-wrap: pretty;
 }
