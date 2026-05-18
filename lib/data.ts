@@ -18,6 +18,7 @@ export type Publication = {
   year: number;
   summary: string;
   tags: string[];
+  url?: string;
 };
 
 export const publications: Publication[] = [
@@ -38,6 +39,7 @@ export const publications: Publication[] = [
     summary:
       "Atrous convolution applied to Landsat 8 satellite imagery for accurate cloud segmentation across spectral bands.",
     tags: ["Deep Learning", "Remote Sensing", "Segmentation"],
+    url: "https://www.researchgate.net/publication/386388602_Implementation_of_Atrous_Convolution_for_Cloud_Segmentation_in_Grayscale_RGB_Images_from_Landsat_8",
   },
   {
     title: "Designing Cybernetic Bloom Methodology (CBM) for Iterative Method Conceptual",
@@ -55,6 +57,7 @@ export const publications: Publication[] = [
     summary:
       "UTAUT 3 model applied to evaluate SAP adoption at PT. KAI under pandemic operating conditions.",
     tags: ["ERP", "SAP", "Adoption Research"],
+    url: "https://www.researchgate.net/publication/368820874_EVALUASI_KESUKSESAN_IMPLEMENTASI_SAP_DI_MASA_PANDEMI_COVID-19_MENGGUNAKAN_MODEL_UTAUT_3_PADA_PT_KAI",
   },
 ];
 
