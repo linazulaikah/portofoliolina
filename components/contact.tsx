@@ -44,7 +44,7 @@ export function Contact() {
               <ArrowUpRight className="size-4 transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
             </a>
             <a
-              href="/lina-zulaikah-cv.pdf"
+              href="/lLINA ZULAIKAH_CV.pdf"
               download
               className="inline-flex items-center gap-2 rounded-full border border-[var(--color-border)] px-5 py-2.5 text-sm font-medium hover:bg-[var(--color-subtle)] transition-colors"
             >
