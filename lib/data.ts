@@ -142,15 +142,27 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    title: "AI Pest Detection in Coffee Plantations",
-    problem:
-      "Smallholder coffee farms lose yield to pests; manual inspection doesn't scale.",
-    approach:
-      "Computer vision pipeline trained on field imagery, paired with usability testing and heuristic evaluation.",
-    outcome:
-      "Validated approach for early detection; informed Telkom's agritech research direction.",
-    stack: ["Computer Vision", "Python", "A/B Testing", "Usability Research"],
-  },
+  title: "DILDASH — T3 AI Hackathon, Teknofest 2024",
+  problem:
+    "Language learning tools lack adaptivity and personalization for diverse learners, making Turkish hard to acquire for international students.",
+  approach:
+    "Built DILDASH (Dil Arkadaş), an LLM-powered interactive platform for Turkish language learning — adaptive, personalized, and accessible for users from diverse backgrounds.",
+  outcome:
+    "2nd place at T3 AI Hackathon, Teknofest 2024 — one of the world's largest tech competitions with 790,000+ teams from 100 countries.",
+  stack: ["LLM", "AI", "Education Tech", "Turkish NLP"],
+  url: "https://drive.google.com/drive/folders/1d0iQ48FM2ulptsZIvqQPFNCHXaebR5Iy?usp=sharing",
+},
+  {
+  title: "AutoPredict AI — Youth Tech Begin, Medeniyet Teknopark 2025",
+  problem:
+    "Vehicle damage assessment in Turkey's mobility and insurance sectors is slow, subjective, and costly — creating friction for both users and insurers.",
+  approach:
+    "Built AutoPredict AI, a system where users upload a photo or 360° video of a damaged vehicle and within 60 seconds gets damage severity detection, repair cost estimation, and a standardized PDF report for insurance claims.",
+  outcome:
+    "1st place at Ideathon, Youth Tech Begin 2025 — organized by Medeniyet Teknopark.",
+  stack: ["Computer Vision", "AI", "PDF Generation", "InsurTech"],
+  url: "https://drive.google.com/drive/folders/1e0UhXUXPTf8I61qTuNox7O5AFEuCQlJk?usp=sharing",
+},
   {
     title: "Malaria Diagnosis with Random Forest + XAI",
     problem:
@@ -159,6 +171,7 @@ export const projects: Project[] = [
       "Random Forest classifier with explainable AI overlays so clinicians can trust and audit predictions.",
     outcome: "Published in UOK Journal 2025; designed for infrastructure-limited deployment.",
     stack: ["Random Forest", "Explainable AI", "Image Processing"],
+    url: "https://drive.google.com/drive/folders/1IL7EbAasfqogaIkt40XBbvSILYJXKKy7?usp=sharing"
   },
   {
     title: "Cloud Segmentation on Landsat 8",
@@ -168,15 +181,7 @@ export const projects: Project[] = [
       "Atrous (dilated) convolution architecture to capture multi-scale context in satellite imagery.",
     outcome: "Published in IEEE 2024; improved segmentation across mixed-spectral inputs.",
     stack: ["Deep Learning", "Atrous Convolution", "Landsat 8"],
-  },
-  {
-    title: "SAP MM Implementation at Sigma Metrasys",
-    problem:
-      "Procurement workflows were fragmented; consultants needed clearer operational visibility.",
-    approach:
-      "Implemented SAP Material Management module and built consultant-facing dashboards.",
-    outcome: "Optimized procurement processes and resolved recurring SAP MM issues.",
-    stack: ["SAP MM", "ERP", "Dashboarding"],
+    url: "https://www.researchgate.net/publication/386388602_Implementation_of_Atrous_Convolution_for_Cloud_Segmentation_in_Grayscale_RGB_Images_from_Landsat_8"
   },
 ];
 
